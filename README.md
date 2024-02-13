@@ -1,6 +1,6 @@
-## Projeto NLW-Expert
+# Projeto NLW-Expert
 
-# Tecnologias Utilizadas
+## Tecnologias Utilizadas
 - HTML
 - CSS
 - JavaScript
