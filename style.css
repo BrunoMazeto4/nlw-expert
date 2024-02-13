@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap");
+
+*,
+:root {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Protest Riot", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background: linear-gradient(
+    0deg,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(253, 187, 45, 1) 100%
+  );
+}
+
+main {
+  padding: 20px;
+  max-width: 650px;
+  margin: 12px auto 64px;
+}
+
+header {
+  margin-top: 66px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #3a3737;
+}
+
+header h1 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 32px;
+  color: #2084d6;
+}
+
+#quiz {
+  counter-reset: quiz-item;
+}
+
+.quiz-item {
+  margin-top: 26px;
+  border: 1px solid #797676;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.quiz-item h3 {
+  padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  margin-top: 0;
+  color: #f3f9e1;
+  text-align: justify;
+  background-color: #2f304c;
+}
+
+h3 {
+  margin: 15px auto;
+}
+
+.quiz-item h3::before {
+  counter-increment: quiz-item;
+  content: counter(quiz-item);
+  background-color: #586679;
+  width: 28px;
+  height: 28px;
+  font-size: 14px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.quiz-item dl {
+  padding: 20px 24px;
+  display: grid;
+  gap: 10px;
+}
+
+.quiz-item dl dt {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #e2e6e0;
+}
+
+input {
+  all: unset;
+  border: 1px solid #fff;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+input:checked {
+  border: 1px solid #b4f746;
+}
+
+input:checked:before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: #b4f746;
+  border-radius: 50%;
+}
+
+input:hover {
+  border-color: #b4f746;
+}
+
+#acertos {
+  background-color: blueviolet;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  padding: 13px;
+  text-align: center;
+}
+
+#acertos span {
+  color: #ccc;
+}
+
+.footer {
+  text-align: center;
+  margin: 20px auto 10px auto;
+}
